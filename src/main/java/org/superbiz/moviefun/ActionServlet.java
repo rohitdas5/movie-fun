@@ -88,7 +88,7 @@ public class ActionServlet extends HttpServlet {
             if (StringUtils.isEmpty(key) || StringUtils.isEmpty(field)) {
                 count = moviesBean.countAll();
                 key = "";
-                field = "";
+                field = "";No qualifying bean of type 'org.springframework.transaction.PlatformTransactionManager' available: expected single matching bean but found 2: albumsTransactionManager,moviesTransactionManager
             } else {
                 count = moviesBean.count(field, key);
             }
